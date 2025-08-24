@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d3d3d3, #a9a9a9, #7f8fa6, #f5f5f5);
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.whatsapp-btn {
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.whatsapp-btn a {
+  background-color: #25D366;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn a:hover {
+  background-color: #1ebe5b;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
